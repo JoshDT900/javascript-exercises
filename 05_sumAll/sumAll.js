@@ -2,12 +2,9 @@ const sumAll = function() {
   let argArr = [...arguments];
   let total = 0;
 
-  argArr.sort((a,b) => a - b);
-  
-  let argOne = argArr[0];
-  let argTwo = argArr[1];
+  argArr.sort((a,b) => a - b);  
 
-  if (typeof argOne != "number" || typeof argTwo != "number") {
+  if (typeof argArr[0] != "number" || typeof argArr[1] != "number") {
     return "ERROR";
   }
 
